@@ -141,14 +141,12 @@
   }
 
   function buildHeaders() {
-    const token = normalizeText(els.hfToken.value);
-    const headers = {
-      "Content-Type": "application/json",
-      "x-wait-for-model": "true",
-    };
-    if (token) headers.Authorization = `Bearer ${token}`;
-    return headers;
-  }
+  const token = normalizeText(els.hfToken.value);
+  const headers = { "Content-Type": "application/json" };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  return headers;
+}
+
 
   async function fetchWithRetry(url, options, retries = 1) {
     try {
