@@ -1,6 +1,6 @@
 // app.js
 (() => {
-  const MODEL_URL = "https://api-inference.huggingface.co/models/siebert/sentiment-roberta-large-english";
+  const MODEL_URL = "https://weathered-art-ecd7.waleed-amawi-12.workers.dev";
   const TSV_PATH = "reviews_test.tsv";
 
   const els = {
